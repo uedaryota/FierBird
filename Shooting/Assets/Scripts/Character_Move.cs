@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Character_Move : MonoBehaviour
 {
-    public float speed = 3.0f;
+    public float speed = 8.0f;
 
     private Vector3 moveDirection = Vector3.zero;
 

@@ -55,13 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\Character_Move.cs" />
-=======
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Character_Move.cs" />
+     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\PlayerShot.cs" />
->>>>>>> ea955df301e77b44c2a0dfa8fc9e3ea6c994b913
      <Compile Include="Assets\Scripts\TitleSelect.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/KPC-018A1417/Documents/FireBired/Shooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -8,7 +8,7 @@ public class EnemyMove : MonoBehaviour
     Rigidbody rb;
     public float speed = 0.01f;//移動スピード
     public float x = 0.0f;
-    public float z = 20.0f;
+    public float z = 12.0f;
 
     void Start()
     {
@@ -19,5 +19,13 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         rb.MovePosition(transform.position + new Vector3(x, 0, z) * -speed);
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Wall")
+        {
+            x *= -1;
+        }
     }
 }

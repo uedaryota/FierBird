@@ -55,11 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Character_Move.cs" />
-=======
-     <Compile Include="Assets\Character_Move.cs" />
->>>>>>> ad9eaf246378f008ac1f2612d0ae2759db3c2e80
      <Compile Include="Assets\Scripts\TitleSelect.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/FierBird/Shooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

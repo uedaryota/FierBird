@@ -31,4 +31,12 @@ public class EnemyBullet : MonoBehaviour
 
         Destroy(bullet, 3.0f);
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.tag =="Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

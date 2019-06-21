@@ -27,5 +27,9 @@ public class EnemyMove : MonoBehaviour
         {
             x *= -1;
         }
+        if(col.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 }

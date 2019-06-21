@@ -6,7 +6,11 @@ TagManager:
   tags:
   - EnemyDeath
   - Enemy
+<<<<<<< HEAD
+  - Missile
+=======
   - Wall
+>>>>>>> a9620cf95b56abe0faf1c5d4c11dbcb7f97e4e46
   layers:
   - Default
   - TransparentFX

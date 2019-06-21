@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 2778572537783546924}
   - component: {fileID: 2778572537783546925}
   - component: {fileID: 2778572537783546926}
+  - component: {fileID: 1910458862573393208}
   - component: {fileID: 2778572537783546919}
   m_Layer: 0
   m_Name: Player
@@ -222,6 +223,24 @@ MonoBehaviour:
   bullet: {fileID: 4401083506370698858, guid: 06168b19a4a3d764e822951700d648ec, type: 3}
   muzzle: {fileID: 2778572537184231642}
   speed: 500
+--- !u!114 &1910458862573393208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778572537783546927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d545e36e7624ee448f10110cf1eae71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 100
+  damagePerShot: 20
+  timeBetweenBullets: 0.15
+  missile: {fileID: 908330707224244027, guid: 3c31ad03bd1462641a027733a8bb1b33, type: 3}
+  muzzle: {fileID: 0}
+  Speed: 0
 --- !u!54 &2778572537783546919
 Rigidbody:
   m_ObjectHideFlags: 0

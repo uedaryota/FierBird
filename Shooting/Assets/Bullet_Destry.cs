@@ -6,7 +6,7 @@ public class Bullet_Destry : MonoBehaviour
 {
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Enemy")
+        if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "EnemyDeath")
         {
             Destroy(gameObject);
         }

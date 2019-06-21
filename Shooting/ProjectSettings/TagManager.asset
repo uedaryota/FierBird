@@ -4,8 +4,23 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Enemy
   - Missile
+=======
+  - Missile
+<<<<<<< HEAD
+  - Enemy
+=======
+=======
+  - Wall
+<<<<<<< HEAD
+  - bullet
+=======
+>>>>>>> a9620cf95b56abe0faf1c5d4c11dbcb7f97e4e46
+>>>>>>> ff63ae3ea667273596fa963407a4295ea5ca4323
+>>>>>>> 030cb9d4f4168f5906b728600a496f00849949bc
+>>>>>>> 51e82aa690371f8b915af7880b506b11dd3f5a67
   layers:
   - Default
   - TransparentFX

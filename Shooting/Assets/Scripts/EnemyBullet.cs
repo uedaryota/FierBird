@@ -9,7 +9,12 @@ public class EnemyBullet : MonoBehaviour
     public int BulletInterval = 100;
 
     private int count = 0;
-    
+
+    //EnemyBulletプレハブ
+    public GameObject enemyBullets;
+    //弾丸発射点
+    public Transform muzzle;
+
     void Update()
     {
         count += 1;
@@ -29,12 +34,14 @@ public class EnemyBullet : MonoBehaviour
         //bulletRigidbody.AddForce(transform.forward * bulletSpeed);
         bulletRigidbody.AddForce(0, 0, -bulletSpeed);
 
-        Destroy(bullet, 3.0f);
+        //弾丸の位置を調整
+        enemyBullets.transform.position = muzzle.position;
+
     }
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag =="Player")
+        if(col.gameObject.tag =="Player" || col.gameObject.tag == "EnemyDeath")
         {
             Destroy(gameObject);
         }

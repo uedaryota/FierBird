@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerShot : MonoBehaviour
 {
-    public float range = 100f;
-    public int damagePerShot = 20;
-    public float timeBetweenBullets = 0.15f;
+    private float range = 100f;
+    private int damagePerShot = 20;
+    private float timeBetweenBullets = 0.15f;
 
-    float timer;
+    private float timer;
 
     //PlayerBulletプレハブ
     public GameObject bullet;

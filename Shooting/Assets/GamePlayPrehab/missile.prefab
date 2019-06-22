@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1927836094039116868}
   - component: {fileID: 3893566904422854212}
   - component: {fileID: 9066336535268987458}
+  - component: {fileID: 5378636207058647568}
   m_Layer: 0
   m_Name: missile
-  m_TagString: Missile
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,3 +124,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5378636207058647568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908330707224244027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e102904d00d9e40a81091224334c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  speed: {x: 0.05, y: 0, z: 0.05}

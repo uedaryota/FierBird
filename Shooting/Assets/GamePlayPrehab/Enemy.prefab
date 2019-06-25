@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8761599697774070872
 Transform:
   m_ObjectHideFlags: 0
@@ -238,8 +238,8 @@ MonoBehaviour:
     type: 3}
   bulletSpeed: 500
   BulletInterval: 100
-  enemyBullets: {fileID: 0}
-  muzzle: {fileID: 0}
+  enemyBullets: {fileID: 8852028154207678123}
+  muzzle: {fileID: 8761599697774070872}
 --- !u!1001 &7594771501480814471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,6 +306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014805364728849082, guid: 7e2216225cf5ebe4aaaa76edfa945857,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e2216225cf5ebe4aaaa76edfa945857, type: 3}

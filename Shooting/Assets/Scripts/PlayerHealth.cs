@@ -1,67 +1,40 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement;
+
 public class PlayerHealth : MonoBehaviour
 {
-    public int startingHealth = 100;
-    public int currentHealth;
-    public Slider healthSlider;
-    public Image damageImage;
-    public float flashSpeed = 5f;
-    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
-    bool isDead;
-    bool damaged;
-    public int Heel = 20;
-    //各コンポーネントを参照します。
-    void Awake()
-    {
-        currentHealth = startingHealth;
-    }
-    //ダメージ受けたら赤く画面が光る
-    void Update()
-    {
-        if (damaged)
-        {
-            damageImage.color = flashColour;
-        }
-        else
-        {
-            //赤く光ったのを元に戻します。
-            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed *
-            Time.deltaTime);
-        }
-        damaged = false;
-    }
-    //ダメージを受ける関数
+    public const int maxHealth = 50;
+    public int currentHealth = maxHealth;
+    public RectTransform healthBar;
+
+    //無敵時間
+    //private const float Invincible_Time = 1.0f;
+    //private float _invincibleTime;
+
     public void TakeDamage(int amount)
     {
-        damaged = true;
         currentHealth -= amount;
-        healthSlider.value = currentHealth;
-        if (currentHealth <= 0 && !isDead)
+        if(currentHealth <= 0)
         {
-            Death();
+            currentHealth = 0;
+            Destroy(gameObject);
         }
-    }
-    void Death()
-    {
-        isDead = true;
-    }
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(0);
+        healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
+
+        //gameObject.layer = LayerName.PlayerInvicibleLayer;
+        //_invincibleTime = Invincible_Time;
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "item")
-        {
-            if (currentHealth < 100)
-            {
-                currentHealth += Heel;
-                healthSlider.value = currentHealth;
-            }
-        }
-    }
+    //public void Update()
+    //{
+    //    if(_invincibleTime > 0)
+    //    {
+    //        _invincibleTime -= Time.deltaTime;
+    //        if(_invincibleTime <= 0)
+    //        {
+    //            gameObject.layer = LayerName.PlayerNomalLayer;
+    //        }
+    //    }
+    //}
 }

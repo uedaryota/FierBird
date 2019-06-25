@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Bullet_Destry : MonoBehaviour
 {
+    void Start()
+    {
+    }
+
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "EnemyDeath")
@@ -14,6 +18,12 @@ public class Bullet_Destry : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+    }
+    void Update()
+    {
+        if(!GetComponent<Renderer>().isVisible)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

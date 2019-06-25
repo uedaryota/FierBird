@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
-  speed: {x: 0.05, y: 0, z: 0.05}
+  speed: {x: 500, y: 0, z: 500}

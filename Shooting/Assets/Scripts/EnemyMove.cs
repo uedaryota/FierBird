@@ -27,6 +27,7 @@ public class EnemyMove : MonoBehaviour
         {
             x *= -1;
         }
+<<<<<<< HEAD
         if(col.gameObject.tag == "bullet")
         {
             Destroy(gameObject);
@@ -36,5 +37,11 @@ public class EnemyMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
+=======
+        if(col.gameObject.tag == "bullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
+        {
+            Destroy(gameObject);
+        }
+>>>>>>> 0578e96033a1fb6df06ece71c5d7b8503c28238b
     }
 }

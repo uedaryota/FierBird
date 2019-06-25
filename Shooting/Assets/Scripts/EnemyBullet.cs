@@ -38,12 +38,4 @@ public class EnemyBullet : MonoBehaviour
         enemyBullets.transform.position = muzzle.position;
 
     }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if(col.gameObject.tag =="Player" || col.gameObject.tag == "EnemyDeath")
-        {
-            Destroy(gameObject);
-        }
-    }
 }

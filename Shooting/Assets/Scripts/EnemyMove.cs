@@ -27,24 +27,9 @@ public class EnemyMove : MonoBehaviour
         {
             x *= -1;
         }
-<<<<<<< HEAD
-        if(col.gameObject.tag == "bullet")
+        if(col.gameObject.tag == "PlayerBullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
         {
             Destroy(gameObject);
         }
-<<<<<<< HEAD
-        
-=======
->>>>>>> 5ef187322aa075700d40ca8c26bb46a639fa0ff1
-        if(col.gameObject.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
-=======
-        if(col.gameObject.tag == "bullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
-        {
-            Destroy(gameObject);
-        }
->>>>>>> 0578e96033a1fb6df06ece71c5d7b8503c28238b
     }
 }

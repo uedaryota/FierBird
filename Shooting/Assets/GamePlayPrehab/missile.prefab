@@ -146,6 +146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
+<<<<<<< HEAD
+  speed: {x: 500, y: 0, z: 500}
+=======
   speed: {x: 0.05, y: 0, z: 0.05}
 <<<<<<< HEAD
 --- !u!114 &7843118199796928471
@@ -162,3 +165,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 =======
 >>>>>>> 5ef187322aa075700d40ca8c26bb46a639fa0ff1
+>>>>>>> f442178f1a85eccb661a9eb195feb56a7a1c37b9

@@ -14,11 +14,15 @@ GameObject:
   - component: {fileID: 1927836094039116868}
   - component: {fileID: 3893566904422854212}
   - component: {fileID: 9066336535268987458}
+<<<<<<< HEAD
   - component: {fileID: 6858048859189968271}
   - component: {fileID: 7843118199796928471}
+=======
+  - component: {fileID: 5378636207058647568}
+>>>>>>> 5ef187322aa075700d40ca8c26bb46a639fa0ff1
   m_Layer: 0
   m_Name: missile
-  m_TagString: Missile
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +129,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!114 &6858048859189968271
+=======
+--- !u!114 &5378636207058647568
+>>>>>>> 5ef187322aa075700d40ca8c26bb46a639fa0ff1
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   speed: {x: 0.05, y: 0, z: 0.05}
+<<<<<<< HEAD
 --- !u!114 &7843118199796928471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48227130c371b747bb67dbd90a3a6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> 5ef187322aa075700d40ca8c26bb46a639fa0ff1

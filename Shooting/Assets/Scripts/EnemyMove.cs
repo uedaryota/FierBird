@@ -32,7 +32,10 @@ public class EnemyMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 5ef187322aa075700d40ca8c26bb46a639fa0ff1
         if(col.gameObject.tag == "Player")
         {
             Destroy(gameObject);

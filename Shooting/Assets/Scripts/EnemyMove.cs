@@ -30,6 +30,16 @@ public class EnemyMove : MonoBehaviour
         if(col.gameObject.tag == "PlayerBullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
         {
             Destroy(gameObject);
+<<<<<<< HEAD
+=======
+        }
+
+        var hit = col.gameObject;
+        var health = hit.GetComponent<PlayerHealth>();
+        if (health != null)
+        {
+            health.TakeDamage(10);
+>>>>>>> 7fbd36475f0256c1f35ce6f33634f2fdedef1153
         }
     }
 }

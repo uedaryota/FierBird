@@ -38,4 +38,14 @@ public class EnemyBullet : MonoBehaviour
         enemyBullets.transform.position = muzzle.position;
 
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        var hit = collision.gameObject;
+        var health = hit.GetComponent<PlayerHealth>();
+        if(health != null)
+        {
+            health.TakeDamage(10);
+        }
+    }
 }

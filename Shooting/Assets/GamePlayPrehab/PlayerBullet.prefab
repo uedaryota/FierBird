@@ -8,6 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 8859324473069157980}
   - component: {fileID: 2488236570878722068}
   - component: {fileID: 3739360744080604214}
@@ -17,6 +18,17 @@ GameObject:
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
+=======
+  - component: {fileID: 4401083506370698854}
+  - component: {fileID: 4401083506370698857}
+  - component: {fileID: 4401083506370698856}
+  - component: {fileID: 4401083506370698859}
+  - component: {fileID: -6169341909536832502}
+  - component: {fileID: 2718392896702704877}
+  m_Layer: 8
+  m_Name: PlayerBullet
+  m_TagString: PlayerBullet
+>>>>>>> 7fbd36475f0256c1f35ce6f33634f2fdedef1153
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

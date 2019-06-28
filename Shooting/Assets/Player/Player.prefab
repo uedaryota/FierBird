@@ -218,9 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0118710c7d1ac42a74ee7e3beed61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 100
-  damagePerShot: 20
-  timeBetweenBullets: 0.1
   bullet: {fileID: 4401083506370698858, guid: 06168b19a4a3d764e822951700d648ec, type: 3}
   muzzle: {fileID: 2778572537184231642}
   speed: 500
@@ -273,6 +270,6 @@ MonoBehaviour:
   range: 100
   damagePerShot: 20
   timeBetweenBullets: 0.15
-  missile: {fileID: 908330707224244027, guid: 3c31ad03bd1462641a027733a8bb1b33, type: 3}
+  missile: {fileID: 3406388340579049811, guid: 3c31ad03bd1462641a027733a8bb1b33, type: 3}
   muzzle: {fileID: 2778572537184231642}
   Speed: 0

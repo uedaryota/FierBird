@@ -44,12 +44,5 @@ public class EnemyMove : MonoBehaviour
             Destroy(gameObject);
             Counter += 1;
         }
-
-        var hit = col.gameObject;
-        var health = hit.GetComponent<PlayerHealth>();
-        if (health != null)
-        {
-            health.TakeDamage(10);
-        }
     }
 }

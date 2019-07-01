@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7190385145665702232}
   - component: {fileID: 6293521070543081007}
   - component: {fileID: 2035681400405579563}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 1211291466661762174}
   - component: {fileID: 5777728761289728816}
   - component: {fileID: 3740056129098997469}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -311,6 +311,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014805364728849082, guid: 7e2216225cf5ebe4aaaa76edfa945857,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e2216225cf5ebe4aaaa76edfa945857, type: 3}

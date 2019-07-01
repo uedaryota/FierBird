@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class EnemyMove : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class EnemyMove : MonoBehaviour
     public float speed = 0.01f;//移動スピード
     public float x = 0.0f;
     public float z = 12.0f;
+    private int Counter = 0;
+
 
     void Start()
     {
@@ -19,6 +23,10 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         rb.MovePosition(transform.position + new Vector3(x, 0, z) * -speed);
+        if(Counter>=10)
+        {
+            SceneManager.LoadScene("Boss");
+        }
     }
 
     void OnCollisionEnter(Collision col)
@@ -27,9 +35,14 @@ public class EnemyMove : MonoBehaviour
         {
             x *= -1;
         }
-        if(col.gameObject.tag == "PlayerBullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
+        if(col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
         {
             Destroy(gameObject);
+        }
+        if(col.gameObject.tag =="PlayerBullet")
+        {
+            Destroy(gameObject);
+            Counter += 1;
         }
     }
 }

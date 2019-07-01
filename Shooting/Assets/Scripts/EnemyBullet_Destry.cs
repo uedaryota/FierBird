@@ -11,4 +11,11 @@ public class EnemyBullet_Destry : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void Update()
+    {
+        if(!GetComponent<Renderer>().isVisible)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

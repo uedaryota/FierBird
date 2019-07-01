@@ -22,9 +22,9 @@ public class Homing : MonoBehaviour
         GameObject Enemy = GameObject.FindGameObjectWithTag("Enemy");
         time += Time.deltaTime;
         float speed = 1.0f;
-        float step = Time.deltaTime * speed * 15;
+        float step = Time.deltaTime * speed * 10;
         transform.position = Vector3.MoveTowards(transform.position, Enemy.transform.position, step);
-        if (time>2.0f)
+        if (time>1.0f)
         {
             float changespeed = 1;
             Vector3 velocity = gameObject.transform.rotation * new Vector3(changespeed, 0, 0);

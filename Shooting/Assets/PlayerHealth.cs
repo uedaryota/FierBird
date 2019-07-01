@@ -18,5 +18,6 @@ public class PlayerHealth : MonoBehaviour
             Death = true;
             Destroy(gameObject);
         }
+        Death = false;
     }
 }

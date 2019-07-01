@@ -8,7 +8,7 @@ public class Stock : MonoBehaviour
     Text text;
     public int stock = 5;
     PlayerHealth health;
-    public string st;
+    public string st = "5";
 
     void Awake()
     {
@@ -20,7 +20,6 @@ public class Stock : MonoBehaviour
     {
         if (health.Death == true)
         {
-            Debug.Log("Death true");
             stock--;
         }
         switch(stock)

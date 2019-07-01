@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Diffusion.cs" />
+    <Compile Include="Assets\PlayerHealth.cs" />
+    <Compile Include="Assets\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Character_Move.cs" />
     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\EnemyBullet_Destry.cs" />
@@ -69,9 +71,9 @@
     <Compile Include="Assets\Scripts\Player_Penetration.cs" />
     <Compile Include="Assets\Scripts\PlayerBullet.cs" />
     <Compile Include="Assets\Scripts\PlayerBullet_Destry.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\TitleSelect.cs" />
+    <Compile Include="Assets\Stock.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/FierBird/Shooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

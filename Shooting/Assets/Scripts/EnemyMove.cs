@@ -31,12 +31,5 @@ public class EnemyMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        var hit = col.gameObject;
-        var health = hit.GetComponent<PlayerHealth>();
-        if (health != null)
-        {
-            health.TakeDamage(10);
-        }
     }
 }

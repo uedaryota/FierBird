@@ -9,11 +9,14 @@ public class Stock : MonoBehaviour
     public int stock = 5;
     PlayerHealth health;
     public string st = "5";
+    GameObject player;
+    
 
     void Awake()
     {
         text = GetComponent<Text>();
-        health = GetComponent<PlayerHealth>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        health = player.GetComponent<PlayerHealth>();
 
     }
     void Update()

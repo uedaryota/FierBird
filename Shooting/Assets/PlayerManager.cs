@@ -6,10 +6,12 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject playerPrefab;
     PlayerHealth health;
+    GameObject player;
     
     void Start()
     {
-        health = GetComponent<PlayerHealth>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        health = player.GetComponent<PlayerHealth>();
     }
     
     void Update()

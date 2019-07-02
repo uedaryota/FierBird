@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Death = true;
             Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
         Death = false;
     }

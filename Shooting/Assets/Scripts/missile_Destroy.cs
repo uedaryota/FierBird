@@ -7,7 +7,7 @@ public class missile_Destroy : MonoBehaviour
     private float time;
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Enemy")
+        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
         }

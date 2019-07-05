@@ -7,11 +7,7 @@ public class missile_Destroy : MonoBehaviour
     private float time;
     void OnCollisionEnter(Collision col)
     {
-<<<<<<< HEAD
-        if(col.gameObject.tag == "Enemy"||col.gameObject.tag=="Wall")
-=======
         if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Wall")
->>>>>>> 34ba8da1dc923550351ebfec5e80d021aae33374
         {
             Destroy(this.gameObject);
         }
@@ -20,12 +16,12 @@ public class missile_Destroy : MonoBehaviour
     {
         Transform mytransform = this.transform;
         Vector3 pos = mytransform.position;
-        if(pos.y>=2)
+        if(pos.y>=5)
         {
             Destroy(this.gameObject);
         }
         time += Time.deltaTime;
-        if(time>=3.0f)
+        if(time>=5.0f)
         {
             Destroy(this.gameObject);
         }

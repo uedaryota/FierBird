@@ -7,11 +7,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8827268081065851480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae85c0b5dbd18aa4bbb4a511a14331d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c291d5c1e27cdf4cb8bc2c96c9a6b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wall: {fileID: 0}
 --- !u!1001 &3021728079772598865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24,10 +25,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossBallet
       objectReference: {fileID: 0}
+    - target: {fileID: 6012186896073603081, guid: 3d2f41b64c86c8048920a3cd9482757c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1751594870819085778, guid: 3d2f41b64c86c8048920a3cd9482757c,
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440555434630012052, guid: 3d2f41b64c86c8048920a3cd9482757c,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8885739747092150026, guid: 3d2f41b64c86c8048920a3cd9482757c,
         type: 3}

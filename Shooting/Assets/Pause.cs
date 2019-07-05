@@ -12,7 +12,7 @@ public class Pause : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("q"))
+        if(Input.GetKey(KeyCode.Escape))
         {
             if(pauseUIInstance == null)
             {

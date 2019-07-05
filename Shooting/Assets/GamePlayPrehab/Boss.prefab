@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2519080782816003220}
   - component: {fileID: 2519080782816003221}
   - component: {fileID: 2519080782816003218}
-  - component: {fileID: 2519080782816003219}
   - component: {fileID: 2519080782816003222}
   m_Layer: 0
   m_Name: Boss
@@ -94,6 +93,8 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
 --- !u!114 &2519080782816003219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +111,7 @@ MonoBehaviour:
   BalletSpeed: 0
   BalletSound: {fileID: 0}
   wall: {fileID: 0}
+>>>>>>> c4570af3f1fc320319c5e7f2711e2b1c074ede42
 --- !u!54 &2519080782816003222
 Rigidbody:
   m_ObjectHideFlags: 0

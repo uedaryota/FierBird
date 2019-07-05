@@ -295,6 +295,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &930585442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +309,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1167038101
+=======
+--- !u!1001 &1480562506230070460
+>>>>>>> 34ba8da1dc923550351ebfec5e80d021aae33374
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -426,7 +430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82486e1d405256742a7c6fa086286829, type: 3}
+<<<<<<< HEAD
 --- !u!1001 &1801270839
+=======
+--- !u!1001 &5229341645887112817
+>>>>>>> 34ba8da1dc923550351ebfec5e80d021aae33374
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2

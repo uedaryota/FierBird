@@ -22,11 +22,11 @@ TagManager:
   - UI
   - 
   - 
-  - Bullet
+  - PlayerBullet
   - PlayerNomal
   - PlayerInvincible
   - Enemy
-  - 
+  - EnemyBullet
   - 
   - 
   - 

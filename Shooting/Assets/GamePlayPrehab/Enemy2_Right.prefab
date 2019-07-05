@@ -142,7 +142,8 @@ MonoBehaviour:
     type: 3}
   bulletSpeed: 500
   BulletInterval: 100
-  enemyBullets: {fileID: 6133193505446299806}
+  enemyBullets: {fileID: 5439398862781869791, guid: 935fd3cddcd5807428174ad98d4028fe,
+    type: 3}
   muzzle: {fileID: 6499570179812746234}
 --- !u!1001 &2665744767333104722
 PrefabInstance:

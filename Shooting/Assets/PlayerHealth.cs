@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public bool Death = false;
@@ -17,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Death = true;
             Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
         Death = false;
     }

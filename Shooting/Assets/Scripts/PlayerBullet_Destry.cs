@@ -11,6 +11,7 @@ public class PlayerBullet_Destry : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "PlayerDeath" || col.gameObject.tag == "Wall")
+
         {
             Destroy(gameObject);
         }

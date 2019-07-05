@@ -9,13 +9,19 @@ public class missile_Destroy : MonoBehaviour
     {
         if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Wall")
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
     void Update()
     {
+        Transform mytransform = this.transform;
+        Vector3 pos = mytransform.position;
+        if(pos.y>=5)
+        {
+            Destroy(this.gameObject);
+        }
         time += Time.deltaTime;
-        if(time>=3.0f)
+        if(time>=5.0f)
         {
             Destroy(this.gameObject);
         }

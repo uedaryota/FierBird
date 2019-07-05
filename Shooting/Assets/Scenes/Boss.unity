@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: N-Way
       objectReference: {fileID: 0}
+    - target: {fileID: 6514141727585838024, guid: 7197ea88d47893c4f8d0a9d3b334bc36,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6514141727585838031, guid: 7197ea88d47893c4f8d0a9d3b334bc36,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -330,6 +335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 2519080782816003216, guid: efb896e954437954b9cf1f07519f7d94,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2519080782816003223, guid: efb896e954437954b9cf1f07519f7d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -395,6 +405,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 2519080782816003219, guid: efb896e954437954b9cf1f07519f7d94,
+        type: 3}
+      propertyPath: bossBallet
+      value: 
+      objectReference: {fileID: 8827268081065851480, guid: 046dd3eb572d32f4a9ab9095484216d3,
+        type: 3}
+    - target: {fileID: 2519080782816003219, guid: efb896e954437954b9cf1f07519f7d94,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> c4570af3f1fc320319c5e7f2711e2b1c074ede42
     - target: {fileID: 2519080782816003222, guid: efb896e954437954b9cf1f07519f7d94,
         type: 3}
       propertyPath: m_Constraints

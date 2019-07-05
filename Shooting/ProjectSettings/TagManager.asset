@@ -12,6 +12,7 @@ TagManager:
   - PlayerDeath
   - PlayerBullet
   - EnemyBulle
+  - Dammy
   layers:
   - Default
   - TransparentFX

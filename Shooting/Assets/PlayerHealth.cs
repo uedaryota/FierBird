@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+
 public class PlayerHealth : MonoBehaviour
 {
     private int frame = 0;
@@ -58,7 +59,11 @@ public class PlayerHealth : MonoBehaviour
         {
             Death = true;
             Destroy(gameObject);
+<<<<<<< HEAD
+            SceneManager.LoadScene("GameOver");
+=======
             //SceneManager.LoadScene("GameOver");
+>>>>>>> 34ba8da1dc923550351ebfec5e80d021aae33374
         }
         Death = false;
     }*/

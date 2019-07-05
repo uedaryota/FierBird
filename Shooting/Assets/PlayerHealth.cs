@@ -6,30 +6,25 @@ public class PlayerHealth : MonoBehaviour
 {
     private int frame = 0;
     private float time = 0.0f;
-
-    //対象のオブジェクト
-    public GameObject desObj;
+    
     public bool isRespon = false;
     private Vector3 initPos;
     public int playerstock = 5;
 
     void Start()
     {
-        this.initPos = Vector3.zero;
-        desObj = GameObject.FindGameObjectWithTag("Player");
+        initPos = new Vector3(0f, 0.5f, 1.0f);
     }
 
     void Update()
     {
-        if(isRespon)
+        if(isRespon == true)
         {
-            time += Time.deltaTime;
-            if(time >= 3.0f)
+            Debug.Log("true");
+            if(Input.GetButtonDown("Jump"))
             {
-                time = 0.0f;
-                isRespon = false;
-                this.desObj.SetActive(true);
-                this.desObj.transform.position = initPos;
+                gameObject.SetActive(true);
+                gameObject.transform.position = initPos;
             }
         }
     }
@@ -43,11 +38,13 @@ public class PlayerHealth : MonoBehaviour
         if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "EnemyBulle")
         {
             playerstock--;
-            this.desObj.SetActive(false);
-            isRespon = true;
+            gameObject.SetActive(false);
         }
     }
 
+
+
+    //α版用
     /*public bool Death = false;
 
     public void Start()

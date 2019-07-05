@@ -320,6 +320,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: bossBallet
+      value: 
+      objectReference: {fileID: 8827268081065851480, guid: 046dd3eb572d32f4a9ab9095484216d3,
+        type: 3}
     - target: {fileID: 2519080782816003216, guid: efb896e954437954b9cf1f07519f7d94,
         type: 3}
       propertyPath: m_Name
@@ -390,19 +395,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2519080782816003219, guid: efb896e954437954b9cf1f07519f7d94,
-        type: 3}
-      propertyPath: bossBallet
-      value: 
-      objectReference: {fileID: 8827268081065851480, guid: 046dd3eb572d32f4a9ab9095484216d3,
-        type: 3}
     - target: {fileID: 2519080782816003222, guid: efb896e954437954b9cf1f07519f7d94,
         type: 3}
       propertyPath: m_Constraints
       value: 126
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2519080782816003219, guid: efb896e954437954b9cf1f07519f7d94, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efb896e954437954b9cf1f07519f7d94, type: 3}
 --- !u!1001 &1172018075
 PrefabInstance:
@@ -477,6 +475,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4401083506370698858, guid: 3a226ecb16183604588f1f9a3e9d2fcc,
         type: 3}
+    - target: {fileID: 2778572537783546924, guid: eeff6d59af97bb34f83a78f8e3dabc91,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeff6d59af97bb34f83a78f8e3dabc91, type: 3}
 --- !u!1 &1172018076 stripped
@@ -497,8 +500,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e66fd201867cd14d8fdd5bcac1bdffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desObj: {fileID: 0}
+  desObj: {fileID: 1172018076}
   isRespon: 0
+  playerstock: 5
 --- !u!1 &1414969721
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +684,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7593646736929613580, guid: 63b59c7c86c160248847b6295dfbbb2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593646736213158044, guid: 63b59c7c86c160248847b6295dfbbb2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.13
+      objectReference: {fileID: 0}
     - target: {fileID: 7593646735080709870, guid: 63b59c7c86c160248847b6295dfbbb2a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -793,3 +807,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 389781260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1990989162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2519080782816003216, guid: efb896e954437954b9cf1f07519f7d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 389781260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1990989167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990989162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868afaa876d718b42a7475d4c5eadbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossBallet: {fileID: 6012186896073603081, guid: 3d2f41b64c86c8048920a3cd9482757c,
+    type: 3}
+  BalletSpeed: 20
+  BalletSound: {fileID: 0}
+  wall: {fileID: 0}

@@ -60,6 +60,7 @@
     <Compile Include="Assets\Pause.cs" />
     <Compile Include="Assets\PlayerHealth.cs" />
     <Compile Include="Assets\PlayerManager.cs" />
+    <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\Scripts\BossBallet.cs" />
     <Compile Include="Assets\Scripts\BossBalletDestroy.cs" />
     <Compile Include="Assets\Scripts\BossBattleShift.cs" />

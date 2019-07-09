@@ -20,7 +20,7 @@ public class BossBalletDestroy : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Wall"||col.gameObject.tag == "Player"||col.gameObject.tag == "Enemy"||col.gameObject.tag=="EnemyDeath")
+        if (col.gameObject.tag == "Wall"||col.gameObject.tag == "Player"||col.gameObject.tag == "Enemy"||col.gameObject.tag=="EnemyDeath"||col.gameObject.tag=="PlayerDeath")
         {
             Destroy(this.gameObject);
         }

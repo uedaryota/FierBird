@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    PlayerHealth health;
     GameObject player;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        health = player.GetComponent<PlayerHealth>();
     }
 
     void Update()

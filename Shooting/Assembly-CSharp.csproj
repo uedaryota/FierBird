@@ -86,7 +86,9 @@
     <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\TitleSelect.cs" />
+    <Compile Include="Assets\StageSelect.cs" />
     <Compile Include="Assets\Stock.cs" />
+    <Compile Include="Assets\TextController.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/FierBird/Shooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

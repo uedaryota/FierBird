@@ -7,7 +7,7 @@ public class TitleSelect : MonoBehaviour
 {
     public void GamePlaySelect()
     {
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("Select");
     }
     public void End()
     {
@@ -20,5 +20,9 @@ public class TitleSelect : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Escape)) End();
+    }
+    public void Practice()
+    {
+        SceneManager.LoadScene("Practice");
     }
 }

@@ -26,7 +26,6 @@ public class BossHP : MonoBehaviour
     {
         if(col.gameObject.tag == "PlayerBullet")
         {
-            Debug.Log("hit");
             HP -= PlayerATK;
         }
     }

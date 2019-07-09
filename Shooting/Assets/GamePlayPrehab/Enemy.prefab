@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 1211291466661762174}
   - component: {fileID: 5777728761289728816}
   - component: {fileID: 3740056129098997469}
+  - component: {fileID: 1557547459581734475}
   m_Layer: 11
   m_Name: Enemy
   m_TagString: Enemy
@@ -229,7 +230,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8852028154207678123}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ac4bdf90e175e24a9185ccd979235b9, type: 3}
   m_Name: 
@@ -241,6 +242,20 @@ MonoBehaviour:
   enemyBullets: {fileID: 5439398862781869791, guid: 935fd3cddcd5807428174ad98d4028fe,
     type: 3}
   muzzle: {fileID: 8761599697774070872}
+--- !u!114 &1557547459581734475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852028154207678123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab024c3aefc8944f94bf1cc78a046ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  PlayerATK: 50
 --- !u!1001 &7594771501480814471
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,15 +30,5 @@ public class EnemyMove : MonoBehaviour
         {
             x *= -1;
         }
-        if(col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
-        {
-            Destroy(gameObject);
-        }
-        if(col.gameObject.tag =="PlayerBullet")
-        {
-            FindObjectOfType<Score>().AddPoint(100);
-
-            Destroy(gameObject);
-        }
     }
 }

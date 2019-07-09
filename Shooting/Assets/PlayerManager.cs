@@ -14,7 +14,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             player.transform.position = new Vector3(0f, 0.5f, 1.0f);
             player.SetActive(true);

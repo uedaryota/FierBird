@@ -15,11 +15,11 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Jump"))
-        {
-            gameObject.SetActive(true);
-            gameObject.transform.position = initPos;
-        }
+        //if(Input.GetButtonDown("Jump"))
+        //{
+        //    gameObject.SetActive(true);
+        //    gameObject.transform.position = initPos;
+        //}
         if(playerstock < 0)
         {
             SceneManager.LoadScene("GameOver");

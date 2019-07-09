@@ -11,7 +11,6 @@ public class EnemyMove : MonoBehaviour
     public float speed = 0.01f;//移動スピード
     public float x = 0.0f;
     public float z = 12.0f;
-    private int Counter = 0;
 
 
     void Start()
@@ -23,10 +22,6 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         rb.MovePosition(transform.position + new Vector3(x, 0, z) * -speed);
-        if(Counter>=10)
-        {
-            SceneManager.LoadScene("Boss");
-        }
     }
 
     void OnCollisionEnter(Collision col)
@@ -41,8 +36,9 @@ public class EnemyMove : MonoBehaviour
         }
         if(col.gameObject.tag =="PlayerBullet")
         {
+            FindObjectOfType<Score>().AddPoint(100);
+
             Destroy(gameObject);
-            Counter += 1;
         }
     }
 }

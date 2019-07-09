@@ -7,8 +7,6 @@ public class BossBallet : MonoBehaviour
     public GameObject bossBallet;
     public float BalletSpeed;
     public AudioClip BalletSound;
-
-    public GameObject wall;
     private int timeCount;//発射間隔
 
     void Start()

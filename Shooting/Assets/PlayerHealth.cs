@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private int frame = 0;
-    private float time = 0.0f;
-    
-    public bool isRespon = false;
     private Vector3 initPos;
     public int playerstock = 5;
 
@@ -19,52 +15,23 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if(isRespon == true)
+        if(Input.GetButtonDown("Jump"))
         {
-            Debug.Log("true");
-            if(Input.GetButtonDown("Jump"))
-            {
-                gameObject.SetActive(true);
-                gameObject.transform.position = initPos;
-            }
+            gameObject.SetActive(true);
+            gameObject.transform.position = initPos;
+        }
+        if(playerstock < 0)
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 
     void OnCollisionEnter(Collision col)
     {
-        if(playerstock < 0)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
         if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "EnemyBulle")
         {
             playerstock--;
             gameObject.SetActive(false);
         }
     }
-
-
-
-    //α版用
-    /*public bool Death = false;
-
-    public void Start()
-    {
-        Death = false;
-    }
-
-    public void OnCollisionEnter(Collision col)
-    {
-        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "EnemyBulle")
-        {
-            Death = true;
-            Destroy(gameObject);
-<<<<<<< HEAD
-            SceneManager.LoadScene("GameOver");
-=======
-            //SceneManager.LoadScene("GameOver");
->>>>>>> 34ba8da1dc923550351ebfec5e80d021aae33374
-        }
-        Death = false;
-    }*/
 }

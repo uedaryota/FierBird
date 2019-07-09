@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerShot : MonoBehaviour
 {
-    private float range = 100f;
     private float timeBetweenBullets = 0.15f;
 
     private float timer;

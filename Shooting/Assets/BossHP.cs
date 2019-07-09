@@ -7,7 +7,8 @@ public class BossHP : MonoBehaviour
 {
     public readonly int maxHP = 100;
     public int HP = 100;
-    public int PlayerATK = 1;
+    public int PlayerBulletATK = 2;
+    public int PlayermissileATK = 1;
     void Start()
     {
         HP = maxHP;
@@ -26,7 +27,11 @@ public class BossHP : MonoBehaviour
     {
         if(col.gameObject.tag == "PlayerBullet")
         {
-            HP -= PlayerATK;
+            HP -= PlayerBulletATK;
+        }
+        if(col.gameObject.tag == "Missile")
+        {
+            HP -= PlayermissileATK;
         }
     }
 }

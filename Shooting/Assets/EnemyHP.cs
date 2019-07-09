@@ -6,7 +6,8 @@ public class EnemyHP : MonoBehaviour
 {
     public readonly int maxHP = 100;
     public int HP = 100;
-    public int PlayerATK = 10;
+    public int PlayerBulletATK = 50;
+    public int PlayermissileATK = 25;
 
     void Start()
     {
@@ -26,7 +27,11 @@ public class EnemyHP : MonoBehaviour
     {
         if(col.gameObject.tag == "PlayerBullet")
         {
-            HP -= PlayerATK;
+            HP -= PlayerBulletATK;
+        }
+        if(col.gameObject.tag == "Missile")
+        {
+            HP -= PlayermissileATK;
         }
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "EnemyDeath")
         {

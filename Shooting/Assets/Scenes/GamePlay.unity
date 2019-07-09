@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 2383295318140884278, guid: 2c2955c60410d7745a8387066586f153,
         type: 3}
       propertyPath: spawnTime
-      value: 0.5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2955c60410d7745a8387066586f153, type: 3}
@@ -537,7 +537,7 @@ PrefabInstance:
     - target: {fileID: 3341241011363724331, guid: 06636817f981ef24b9bb6a7b06690239,
         type: 3}
       propertyPath: spawnTime
-      value: 0.7
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06636817f981ef24b9bb6a7b06690239, type: 3}
@@ -607,6 +607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399392279022550199, guid: 0e97f9a0a51c41a4b8acc3591b8fd78f,
+        type: 3}
+      propertyPath: timeBetweenBullets
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e97f9a0a51c41a4b8acc3591b8fd78f, type: 3}

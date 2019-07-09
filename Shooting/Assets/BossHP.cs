@@ -22,7 +22,7 @@ public class BossHP : MonoBehaviour
         }
     }
 
-    void OnCollidionEnter(Collision col)
+    void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "PlayerBullet")
         {
